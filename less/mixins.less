@@ -20,3 +20,11 @@
     .flex-center();
     align-items: center;
 }
+
+.slider(@duration, @delay){
+    animation-name: slide-in;
+    animation-duration: @duration;
+    animation-timing-function: ease;
+    animation-delay: @delay;
+    animation-fill-mode: backwards;
+}
