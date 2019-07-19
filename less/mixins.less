@@ -1,1 +1,30 @@
 // Mixins Here
+
+.flex-center() {
+  display: flex;
+  justify-content: center;
+}
+
+.header-fonts() {
+  text-align: center;
+  color: @header-font-color;
+}
+
+.mix-button(@back, @color) {
+  background-color: @back;
+  color: @color;
+  width: 100px;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 1.5rem;
+  .flex-center();
+  align-items: center;
+}
+
+.slider(@duration, @delay) {
+  animation-name: slide-in;
+  animation-duration: @duration;
+  animation-timing-function: ease;
+  animation-delay: @delay;
+  animation-fill-mode: backwards;
+}
