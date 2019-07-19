@@ -1,9 +1,8 @@
 // Home Content
 
 .home {
-
   .intro {
-    @media @phone{
+    @media @phone {
       width: 90%;
       transition: 1s;
       margin: 0 auto;
@@ -14,14 +13,13 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
 
-    img{
+    img {
       width: 100%;
       border-radius: 5px;
     }
-  
   }
 
   .space-images {
@@ -29,27 +27,27 @@
     flex-wrap: wrap;
     width: 100%;
 
-    @media @phone{
+    @media @phone {
       width: 90%;
       transition: 1s;
       margin: 0 auto;
       .sky,
-      .launch{
-        display:none;
+      .launch {
+        display: none;
         transition: 1s;
       }
-      .blast{
+      .blast {
         width: 100%;
       }
     }
 
-    .blast{
+    .blast {
       .slider(4s, 0s);
     }
-    .sky{
+    .sky {
       .slider(4s, 0.5s);
     }
-    .launch{
+    .launch {
       .slider(4s, 1s);
     }
 
@@ -63,7 +61,7 @@
 
   .visit-planets {
     padding: 15px;
-    @media @phone{
+    @media @phone {
       padding-bottom: 0;
       transition: 1s;
       width: 90%;
@@ -85,21 +83,18 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     .flex-center();
-    @media @phone{
-      // margin-top: 30px;
-      // padding-top: 0px;
+    @media @phone {
       width: 90%;
       margin: 0 auto;
       flex-direction: column-reverse;
       transition: 1s;
       padding: 30px 0px;
-      // padding-top: 30px;
       transition: 1s;
     }
 
     .walk-text {
       width: 50%;
-      @media @phone{
+      @media @phone {
         width: 100%;
         transition: 1s;
       }
@@ -115,28 +110,27 @@
       .btn {
         .mix-button(@btn-bg-color, @wild-sand);
 
-        &:hover{
+        &:hover {
           background-color: @wild-sand;
           color: @btn-bg-color;
           transition: 1s;
         }
-        @media @phone{
+        @media @phone {
           width: 100%;
           height: 60px;
           transition: 1s;
         }
-
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media @phone{
+      @media @phone {
         width: 100%;
         margin-left: 0;
       }
-      
+
       img {
         width: 100%;
         height: auto;
@@ -144,4 +138,4 @@
       }
     }
   }
-}// home
+} // home
