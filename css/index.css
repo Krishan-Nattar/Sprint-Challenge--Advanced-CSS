@@ -291,6 +291,7 @@ footer {
     transition: 1s;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 .home .visit-planets h3 {
