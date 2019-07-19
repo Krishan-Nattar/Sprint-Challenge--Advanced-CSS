@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will change based on set breakpoints, but have hardcoded pixels dimensions to determine what those changes will be.
+A full responsive website will use set breakpoints, but be fluid with percentage dimensions in between.
+
 2. Describe what it means to be mobile first vs desktop first.
 
+In CSS, it's using min-width vs max-width.
+Mobile first means you build the site based on the mobile version first. The properties will cascade into the min width breakpoints as the screen gets larger.
+Desktop first is the opposite. Build for the larger screen, then the properties cascade towards the smaller screen sizes via max-width.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+We are assuming the browser has a default of 16px set. This makes the root font size 10pixels. This allows for easier calculations throughout the page.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is is using a separate program with it's own syntax to write the CSS. It provides many features that straight CSS will not have. It makes writing the code simpler and easier to manage. The code gets processed and turned into straight CSS, which is what the browser will read. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nested media queries are my favorite concept. 
+The concept that gives me the most trouble is mixins. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -94,7 +107,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
 * [x] Add a viewport meta tag to the head of your index.html page
 
